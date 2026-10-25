@@ -373,3 +373,29 @@ hr {
     border-radius: 6px;
     cursor: pointer;
 }
+@media screen and (max-width: 768px) {
+    nav, .menu, .nav-bar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 5px;
+    }
+    
+    nav a, .nav-btn, .menu button {
+        font-size: 14px;
+        padding: 8px 12px;
+        margin: 4px 0;
+        width: 80%;
+        text-align: center;
+    }
+
+    h1, .header-title {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
