@@ -1,0 +1,279 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ar" lang="ar">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>السيارات - معرض لتأجير السيارات</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <!-- ربط مكتبة jQuery وملف الجافاسكريبت الخارجي -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="myFunctions.js"></script>
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="home.html">الصفحة الرئيسية</a>
+        <a href="AboutUs.html">من نحن</a>
+        <a href="Cars.html" class="active">السيارات</a>
+    </div>
+
+    <table class="cars-table">
+        <thead>
+            <tr>
+                <th>اختيار</th>
+                <th>إظهار التفاصيل</th>
+                <th>السعر اليومي</th>
+                <th>سنة الصنع</th>
+                <th>الموديل</th>
+                <th>الرمز</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            <!-- السيارة الأولى -->
+            <tr>
+                <td><input type="checkbox" name="car" value="CR-001" data-price="250000" /></td>
+                <td><input type="checkbox" class="toggle-checkbox" /></td>
+                <td>250000 syp</td>
+                <td>2023</td>
+                <td>Toyota Corolla</td>
+                <td>CR-001</td>
+            </tr>
+
+            <tr class="details">
+              <td colspan="6">
+                <div>
+                    <strong>التفاصيل</strong> 
+                       <span><b>نوع الوقود:</b> بنزين</span>
+                       <span><b>ناقل الحركة:</b> أوتوماتيك</span> 
+                       <span><b>عدد المقاعد:</b> 5</span>
+                       <span><b>عدد الكيلوميترات:</b> 20,000 كم</span>
+                       <span><b>اللون:</b> أبيض</span>
+                       <div class="image">
+                          <img src="toyota.jpg" alt="toyota.jpg" width="150" />
+                          <img src="toyota2.jpg" alt="toyota2.jpg" width="150" />
+                          <img src="toyota3.jpg" alt="toyota3.jpg" width="150" />
+                       </div>
+                </div>
+              </td>
+            </tr>
+             
+            <!-- السيارة الثانية -->
+            <tr>
+                <td><input type="checkbox" name="car" value="CR-002" data-price="400000" /></td>
+                <td><input type="checkbox" class="toggle-checkbox" /></td>
+                <td>400000 syp</td>
+                <td>2022</td>
+                <td>Kia Sportage</td>
+                <td>CR-002</td>
+            </tr>
+            
+            <tr class="details">
+                <td colspan="6">
+                    <div>
+                        <strong>التفاصيل</strong>
+                        <span><b>نوع الوقود:</b> بنزين</span>
+                       <span><b>ناقل الحركة:</b> أوتوماتيك</span> 
+                       <span><b>عدد المقاعد:</b> 5</span>
+                       <span><b>عدد الكيلوميترات:</b> 35,000 كم</span>
+                       <span><b>اللون:</b> أسود</span>
+                       <div class="image">
+                          <img src="kia.jpg" alt="kia.jpg" width="150" />
+                          <img src="kia2.jpg" alt="kia2.jpg" width="150" />
+                          <img src="kia3.jpg" alt="kia3.jpg" width="150" />
+                       </div>
+                    </div>
+                </td>
+            </tr>
+
+            <!-- السيارة الثالثة -->
+            <tr>
+                <td><input type="checkbox" name="car" value="CR-003" data-price="300000" /></td>
+                <td><input type="checkbox" class="toggle-checkbox" /></td>
+                <td>300000 syp</td>
+                <td>2024</td>
+                <td>Hyundai Elantra</td>
+                <td>CR-003</td>
+            </tr>
+
+            <tr class="details">
+                <td colspan="6">
+                    <div>
+                       <strong>التفاصيل</strong>
+                       <span><b>نوع الوقود:</b> بنزين</span>
+                       <span><b>ناقل الحركة:</b> أوتوماتيك</span> 
+                       <span><b>عدد المقاعد:</b> 5</span>
+                       <span><b>عدد الكيلوميترات:</b> 10,000 كم</span>
+                       <span><b>اللون:</b> فضي</span>
+                       <div class="image">
+                          <img src="hyundai.jpg" alt="hyundai.jpg" width="150" />
+                          <img src="hyundai2.jpg" alt="hyundai2.jpg" width="150" />
+                          <img src="hyunda3.jpg" alt="hyunda3.jpg" width="150" />
+                       </div>
+                    </div>
+                </td>
+            </tr>
+
+            <!-- السيارة الرابعة -->
+            <tr>
+                <td><input type="checkbox" name="car" value="CR-004" data-price="180000" /></td>
+                <td><input type="checkbox" class="toggle-checkbox" /></td>
+                <td>180000 syp</td>
+                <td>2021</td>
+                <td>Chevrolet Spark</td>
+                <td>CR-004</td>
+            </tr>
+
+            <tr class="details">
+                <td colspan="6">
+                    <div>
+                       <strong>التفاصيل</strong>
+                       <span><b>نوع الوقود:</b> بنزين</span>
+                       <span><b>ناقل الحركة:</b> عادي</span> 
+                       <span><b>عدد المقاعد:</b> 4</span>
+                       <span><b>عدد الكيلوميترات:</b> 50,000 كم</span>
+                       <span><b>اللون:</b> أحمر</span>
+                       <div class="image">
+                          <img src="Chevrolet.jpg" alt="Chevrolet.jpg" width="150" />
+                          <img src="Chevrolet2.jpg" alt="Chevrolet2.jpg" width="150" />
+                          <img src="Chevrolet3.jpg" alt="Chevrolet3.jpg" width="150" />
+                       </div>
+                    </div>
+                </td>
+            </tr>
+
+            <!-- السيارة الخامسة -->
+            <tr>
+                <td><input type="checkbox" name="car" value="CR-005" data-price="350000" /></td>
+                <td><input type="checkbox" class="toggle-checkbox" /></td>
+                <td>350000 syp</td>
+                <td>2023</td>
+                <td>Renault Duster</td>
+                <td>CR-005</td>
+            </tr>
+
+            <tr class="details">
+                <td colspan="6">
+                    <div>
+                        <strong>التفاصيل</strong>
+                        <span><b>نوع الوقود:</b> ديزل</span>
+                       <span><b>ناقل الحركة:</b> أوتوماتيك</span> 
+                       <span><b>عدد المقاعد:</b> 5</span>
+                       <span><b>عدد الكيلوميترات:</b> 25,000 كم</span>
+                       <span><b>اللون:</b> كحلي</span>
+                       <div class="image">
+                          <img src="Renault.jpg" alt="Renault.jpg" width="150" />
+                          <img src="Renault2.jpg" alt="Renault2.jpg" width="150" />
+                          <img src="Renault3.jpg" alt="Renault3.jpg" width="150" />
+                       </div>
+                    </div>
+                </td>
+            </tr>
+
+            <!-- السيارة السادسة -->
+            <tr>
+                <td><input type="checkbox" name="car" value="CR-006" data-price="450000" /></td>
+                <td><input type="checkbox" class="toggle-checkbox" /></td>
+                <td>450000 syp</td>
+                <td>2024</td>
+                <td>Hyundai Tucson</td>
+                <td>CR-006</td>
+            </tr>
+
+            <tr class="details">
+                <td colspan="6">
+                    <div>
+                        <strong>التفاصيل</strong>
+                        <span><b>نوع الوقود:</b> بنزين</span>
+                       <span><b>ناقل الحركة:</b> أوتوماتيك</span> 
+                       <span><b>عدد المقاعد:</b> 5</span>
+                       <span><b>عدد الكيلوميترات:</b> 15,000 كم</span>
+                       <span><b>اللون:</b> رمادي</span>
+                       <div class="image">
+                          <img src="tucson.jpg" alt="tucson.jpg" width="150" />
+                          <img src="tucson2.jpg" alt="tucson2.jpg" width="150" />
+                          <img src="tucson3.jpg" alt="tucson3.jpg" width="150" />
+                       </div>
+                    </div>
+                </td>
+            </tr>
+
+            <!-- السيارة السابعة -->
+            <tr>
+                <td><input type="checkbox" name="car" value="CR-007" data-price="220000" /></td>
+                <td><input type="checkbox" class="toggle-checkbox" /></td>
+                <td>220000 syp</td>
+                <td>2022</td>
+                <td>Nissan Sunny</td>
+                <td>CR-007</td>
+            </tr>
+
+            <tr class="details">
+                <td colspan="6">
+                    <div>
+                        <strong>التفاصيل</strong>
+                        <span><b>نوع الوقود:</b> بنزين</span>
+                       <span><b>ناقل الحركة:</b> عادي</span> 
+                       <span><b>عدد المقاعد:</b> 5</span>
+                       <span><b>عدد الكيلوميترات:</b> 40,000 كم</span>
+                       <span><b>اللون:</b> أبيض</span>
+                       <div class="image">
+                          <img src="Nissan.jpg" alt="Nissan.jpg" width="150" />
+                          <img src="Nissan2.jpg" alt="Nissan2.jpg" width="150" />
+                          <img src="Nissan3.jpg" alt="Nissan3.jpg" width="150" />
+                       </div>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="continue-container">
+        <button type="button" class="button">متابعة</button>
+    </div>
+
+    <div class="booking-section">
+        <h3 class="booking-title">نموذج طلب حجز سيارة</h3>
+        
+        <form class="booking-form" action="#" method="get">
+            <fieldset class="booking-fieldset">
+                <legend class="booking-legend">بيانات المستأجر</legend>
+                
+                <div class="form-group">
+                    <label><b>الاسم الكامل:</b></label><br />
+                    <input type="text" name="fullname" class="form-input fullname-input" />
+                </div>
+
+                <div class="form-group">
+                    <label><b>الرقم الوطني:</b></label><br />
+                    <input type="text" name="national-id" maxlength="11" class="form-input national-id-input" />
+                </div>
+
+                <div class="form-group">
+                    <label><b>تاريخ بداية التأجير:</b></label><br />
+                    <input type="date" name="start-date" class="form-input start-date-input" />
+                </div>
+
+                <div class="form-group">
+                    <label><b>تاريخ نهاية التأجير:</b></label><br />
+                    <input type="date" name="end-date" class="form-input end-date-input" />
+                </div>
+
+                <div class="form-group">
+                    <label><b>رقم الموبايل:</b></label><br />
+                    <input type="text" name="mobile" class="form-input mobile-input" />
+                </div>
+
+                <div class="form-group">
+                    <label><b>البريد الإلكتروني:</b></label><br />
+                    <input type="text" name="email" class="form-input email-input" />
+                </div>
+
+                <div class="submit-container">
+                    <button type="submit" class="button submit-button">إرسال الطلب</button>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+
+</body>
+</html>
